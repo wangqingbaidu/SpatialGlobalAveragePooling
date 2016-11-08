@@ -1,5 +1,5 @@
 # SpatialGlobalAveragePooling
-安装以及介绍请参考 [www.wangqingbaidu.cn](www.wangqingbaidu.cn) and [https://zhuanlan.zhihu.com/p/21550685](https://zhuanlan.zhihu.com/p/21550685) 
+安装以及介绍请参考 [www.wangqingbaidu.cn](http://www.wangqingbaidu.cn/article/dltb1478596035.html) and [https://zhuanlan.zhihu.com/p/21550685](https://zhuanlan.zhihu.com/p/21550685) 
 
 ``` lua
 require ‘nn’
