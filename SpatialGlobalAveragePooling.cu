@@ -68,7 +68,7 @@ __global__ void GlobalAvePoolBackward(const int nthreads, const Dtype* const top
     const int num, const int channels, const int height, const int width, Dtype* const bottom_diff) {
   CUDA_KERNEL_LOOP(index, nthreads) {
 	const int pool_size = height * width;
-    const Dtype* const top_diff_slice = top_diff + index;
+    const Dtype* const top_diff_slice = top_diff + index / pool_size;
     Dtype gradient = top_diff_slice[0] / pool_size;
     bottom_diff[index] = gradient;
   }
